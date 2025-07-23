@@ -1,6 +1,6 @@
-import React from 'react';
+
 import { Logo } from './Logo';
-import { Instagram, Facebook, Linkedin, Twitter } from 'lucide-react';
+import { Instagram} from 'lucide-react';
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();

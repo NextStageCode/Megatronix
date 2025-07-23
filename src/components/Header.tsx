@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Logo } from './Logo';
-import { ThemeToggle } from './ThemeToggle';
 import { Menu, X } from 'lucide-react';
 
 export const Header = () => {

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Check, Store, Speaker, Wrench, TabletSmartphone } from 'lucide-react';
 import { motion } from 'framer-motion';
 
