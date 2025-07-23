@@ -28,85 +28,26 @@ export const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Entre em Contato</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Vamos conversar sobre como podemos ajudar seu negócio a se destacar no ambiente digital.
+            Quer saber mais sobre nossos produtos, serviços ou parcerias?<br></br>
+            Estamos aqui para ajudar você!
           </p>
         </div>
         
         <div className="max-w-4xl mx-auto grid md:grid-cols-5 gap-10">
+    
           <div className="md:col-span-3">
-            <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-sm">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                    Nome
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
-                    placeholder="Seu nome"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
-                    placeholder="seu@email.com"
-                  />
-                </div>
+            <div className="w-full h-[300px] rounded-lg overflow-hidden shadow-md">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.659711490175!2d-47.18758073808175!3d-23.544738552624995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf73c7ff6df119%3A0x975d630a6bb36e93!2sMegatronix%20Magazine!5e0!3m2!1spt-BR!2sbr!4v1753232924026!5m2!1spt-BR!2sbr"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
-              
-              <div className="mb-6">
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                  Telefone
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
-                  placeholder="(00) 00000-0000"
-                />
-              </div>
-              
-              <div className="mb-6">
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                  Mensagem
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  required
-                  rows={5}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none"
-                  placeholder="Como podemos ajudar?"
-                ></textarea>
-              </div>
-              
-              <button
-                type="submit"
-                className="w-full inline-flex items-center justify-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg transition-all hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-              >
-                Enviar Mensagem
-                <Send className="ml-2 h-4 w-4" />
-              </button>
-            </form>
+            
           </div>
           
           <div className="md:col-span-2 flex flex-col">
@@ -116,31 +57,50 @@ export const Contact = () => {
               <div className="space-y-6">
                 <div>
                   <p className="font-medium text-gray-700 mb-1">Email</p>
-                  <a href="mailto:nextstagecode@gmail.com" className="text-blue-600 hover:underline">
-                    contato@nextstage.com.br
+                  <a 
+                    href="mailto:megatronixmagazine@gmail.com?subject=Solicitação%20de%20Informações&body=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20produtos%20e%20serviços." 
+                    className="text-blue-600 hover:underline"
+                  >
+                    megatronixmagazine@gmail.com
                   </a>
+
                 </div>
                 
+                <div>
+                  <p className="font-medium text-gray-700 mb-1">Locação de Som ou Vitrine</p>
+                  <a href="https://wa.me/5515997731369?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os." target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline">
+                    +55 (15) 99773-1369
+                  </a>
+                </div>
+
                 <div>
                   <p className="font-medium text-gray-700 mb-1">Telefone</p>
-                  <a href="tel:+5515998120955" className="text-blue-600 hover:underline">
-                    +55 (15) 99812-0955
+                  <a href="https://wa.me/551147083356?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20produtos%20e%20servi%C3%A7os." 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline">
+                     (11) 4708-3356
                   </a>
                 </div>
                 
-                   {/* 
+                   { 
                 <div>
                   <p className="font-medium text-gray-700 mb-1">Endereço</p>
-                  <p className="text-gray-600">
-                    Av. Tecnologia, 1000<br />
-                    São Paulo - SP
-                  </p>
+                  <a href="https://www.google.com/search?q=endere%C3%A7o+megatronix&oq=endere%C3%A7o+megatronix&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQIRigATIHCAIQIRigAdIBCDM4MjNqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" 
+                  target="_blank"
+                  rel="noopener noreferrer">
+                    <p className="text-gray-600">
+                      R. Monteiro Lobato, 300 - Centro, Mairinque - SP, 18120-000
+                    </p>
+                  </a>
                 </div>
-                   */}
+                   }
 
                 <div className="pt-4">
                   <a
-                    href="https://wa.me/5515998120955"
+                    href="https://wa.me/551147083356"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-6 py-3 bg-green-500 text-white font-medium rounded-lg transition-all hover:bg-green-600 w-full"

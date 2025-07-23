@@ -6,53 +6,44 @@ export const Portfolio = () => {
   
   const projects = [
     {
-      title: "E-commerce Moda Sustentável",
-      category: "websites",
-      image: "https://images.pexels.com/photos/5702281/pexels-photo-5702281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      description: "Design minimalista para uma marca de moda sustentável, com foco em experiência de compra intuitiva.",
-      link: "https://example.com/ecommerce-moda"
+      title: "Capinhas e Películas",
+      category: "produtos",
+      image: "https://i.ibb.co/q39CnCTq/Post-Instagram-Acess-rios-para-Celular-Branco-e-Laranja.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      description: "Modelos diversos de capinhas e películas com proteção, estilo e compatibilidade para várias marcas de celulares.",
+      link: "#"
     },
     {
-      title: "Portal Corporativo Financeiro",
-      category: "websites",
-      image: "https://images.pexels.com/photos/937481/pexels-photo-937481.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      description: "Portal institucional para empresa do setor financeiro, com sistema de blog e área do cliente.",
-      link: "https://example.com/portal-corporativo"
+      title: "Fones de Ouvido",
+      image: "https://images.pexels.com/photos/3756950/pexels-photo-3756950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      description: "Fones com e sem fio, ideais para curtir música com qualidade onde você estiver.",
     },
     {
-      title: "Cartão Digital Consultoria",
-      category: "cards",
-      image: "https://images.pexels.com/photos/5082579/pexels-photo-5082579.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      description: "Cartão digital interativo para consultoria empresarial com integração a calendário de agendamentos.",
-      link: "https://example.com/cartao-consultoria"
+      title: "Garrafinhas e Acessórios",
+      category: "produtos",
+      image: "https://i.ibb.co/1fMHXTV8/9f03484b95d235b4600bc15e30ab5827.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      description: "Garrafinhas térmicas, eletrônicos úteis para o dia a dia e acessórios modernos que facilitam sua rotina.",
+      link: "#"
     },
     {
-      title: "Landing Page SaaS",
-      category: "websites",
-      image: "https://images.pexels.com/photos/196646/pexels-photo-196646.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      description: "Landing page de alto impacto para produto SaaS, com foco em conversão e experiência do usuário.",
-      link: "https://example.com/landing-saas"
+      title: "Carregadores e Cabos",
+      category: "produtos",
+      image: "https://images.pexels.com/photos/33061128/pexels-photo-33061128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      description: "Carregadores turbo, cabos resistentes e adaptadores para manter seus dispositivos sempre prontos.",
+      link: "#"
     },
     {
-      title: "Cartão Digital Arquitetura",
-      category: "cards",
-      image: "https://images.pexels.com/photos/3747463/pexels-photo-3747463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      description: "Cartão digital para estúdio de arquitetura, com portfolio integrado e recursos visuais impactantes.",
-      link: "https://example.com/cartao-arquitetura"
+      title: "Caixas de Som",
+      category: "produtos",
+      image: "https://i.ibb.co/99ShMnq6/2017-08-22-boombox-home-jbl.webp?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      description: "Caixas de som portáteis e com bluetooth, perfeitas para levar o som a qualquer lugar.",
+      link: "#"
     },
     {
-      title: "Cartão Digital Manicure",
-      category: "cards",
-      image: "https://i.ibb.co/cKzPD7yy/Captura-de-tela-2025-05-28-153611.png",
-      description: "Cartão digital para manicure e pedicure, com recursos visuais impactantes, tabela de preço, redes sociais e integração com WhatsApp.",
-      link: "https://gabrielliima2.github.io/ThatyDiniz/"
-    },
-    {
-      title: "Site Institucional Clínica",
-      category: "websites",
-      image: "https://images.pexels.com/photos/1170979/pexels-photo-1170979.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      description: "Website completo para clínica médica, com sistema de agendamento online e blog informativo.",
-      link: "https://example.com/site-clinica"
+      title: "Smartwatches e Eletrônicos Inteligentes",
+      category: "produtos",
+      image: "https://images.pexels.com/photos/5081424/pexels-photo-5081424.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      description: "Relógios inteligentes, gadgets modernos e produtos que conectam você ao futuro.",
+      link: "#"
     }
   ];
 
@@ -64,43 +55,10 @@ export const Portfolio = () => {
     <section id="portfolio" className="py-20">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nosso Portfólio</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
-            Conheça alguns dos projetos que desenvolvemos para nossos clientes.
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Nossos Produtos</h2>
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            Tudo o que você precisa em tecnologia e praticidade, em um só lugar.
           </p>
-          
-          <div className="flex flex-wrap justify-center gap-2 mb-8">
-            <button 
-              onClick={() => setActiveFilter('all')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                activeFilter === 'all' 
-                  ? 'bg-blue-600 text-white' 
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
-            >
-              Todos
-            </button>
-            <button 
-              onClick={() => setActiveFilter('websites')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                activeFilter === 'websites' 
-                  ? 'bg-blue-600 text-white' 
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
-            >
-              Websites
-            </button>
-            <button 
-              onClick={() => setActiveFilter('cards')}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                activeFilter === 'cards' 
-                  ? 'bg-blue-600 text-white' 
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
-            >
-              Cartões Digitais
-            </button>
-          </div>
         </div>
         
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -116,17 +74,10 @@ export const Portfolio = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-6">
-                  <a href={project.link} className="text-white flex items-center font-medium" target="_blank" rel="noopener noreferrer">
-                    Ver Projeto <ExternalLink className="ml-2 h-4 w-4" />
-                  </a>
+                  
                 </div>
               </div>
               <div className="p-6">
-                <div className="mb-2">
-                  <span className="text-xs font-medium bg-blue-100 text-blue-800 px-2 py-1 rounded-full">
-                    {project.category === 'websites' ? 'Website' : 'Cartão Digital'}
-                  </span>
-                </div>
                 <h3 className="text-xl font-bold text-gray-800 mb-2">{project.title}</h3>
                 <p className="text-gray-600">{project.description}</p>
               </div>
