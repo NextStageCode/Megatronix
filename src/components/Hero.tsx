@@ -14,7 +14,7 @@ export const Hero = () => {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
-              Desde 2018,<br></br> conectando pessoas com tecnologia e soluções inteligentes
+              Desde 2018<br></br> conectando pessoas com tecnologia e soluções inteligentes
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-lg">
               Na Megatronix, você encontra uma ampla variedade de acessórios e eletrônicos com qualidade e confiança.<br></br>
