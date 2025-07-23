@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, { createContext, useContext } from 'react';
 
 type Theme = 'light' | 'dark';
 
@@ -10,26 +10,16 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>(() => {
-    if (typeof window !== 'undefined') {
-      const savedTheme = localStorage.getItem('theme');
-      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      return (savedTheme as Theme) || (prefersDark ? 'dark' : 'light');
-    }
-    return 'light';
-  });
+  // Sempre força o tema como 'dark'
+  const theme: Theme = 'dark';
 
-  useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-    localStorage.setItem('theme', theme);
-  }, [theme]);
+  // Aplica classe 'dark' ao <html> no carregamento
+  if (typeof window !== 'undefined') {
+    document.documentElement.classList.add('dark');
+  }
 
   const toggleTheme = () => {
-    setTheme(prevTheme => prevTheme === 'light' ? 'dark' : 'light');
+    // função vazia: impede troca
   };
 
   return (

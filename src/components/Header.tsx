@@ -51,11 +51,11 @@ export const Header = () => {
               </a>
             ))}
           </nav>
-          <ThemeToggle />
+
         </div>
 
         <div className="md:hidden flex items-center space-x-4">
-          <ThemeToggle />
+
           <button 
             className="text-gray-700 dark:text-gray-300 focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
